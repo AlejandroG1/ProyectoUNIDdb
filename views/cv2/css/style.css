@@ -1,0 +1,77 @@
+@media all {
+
+html {
+    background-image: url("https://img.freepik.com/free-vector/blurred-background-with-light-colors_1034-245.jpg?size=338&ext=jpg&ga=GA1.2.1719832273.1627776000");
+    background-size:cover;
+}
+body {
+
+    margin: 0 auto;
+    width: 27.94cm;
+   /* display: flex;*/
+}
+.contact {
+    padding: 3px;
+    margin-top: 10px;
+}
+.contacto {
+    text-align: center;
+}
+.texto-user {
+    margin:0;
+}
+.cabezera {
+    background-color: #18181b;
+    height: 180px;
+    width: 27.94cm;
+    margin: 0;
+    color: blanchedalmond;
+    }
+.name {
+    margin-top: 55px;
+    margin-left: 20px;
+}
+.foto {
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 160px;
+    background-color: white;
+
+}
+.texto-user {
+    color: black;
+    font-weight: bold;
+    text-align: inherit;
+}
+.acerca_de {
+    background-color: #Feffff;
+}
+.experiencia {
+    background-color: #Feffff;
+}
+.academica {
+    background-color: #Feffff;
+}
+.habilidades {
+    background-color: #Feffff;
+}
+.idiomas {
+    background-color: #Feffff;
+}
+.extras {
+    width: 27.94cm;
+    margin: 0;
+}
+.pasatiempos {
+    background-color: #Feffff;
+    padding: 0;
+    margin: 0;
+}
+.competencias {
+    background-color: #Feffff;
+    padding: 0;
+    margin: 0;
+}
+}
