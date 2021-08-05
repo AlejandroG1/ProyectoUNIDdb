@@ -1,271 +1,28 @@
-body
-{
-    background: #000;
+body{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
 }
-.container
-{
-    position: relative;
-    width: 100%;
-    max-width: 1000px;
-    min-height: 1000px;
+.contenedor{
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    width: 60%;
     background: #fff;
-    margin: 50px;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    box-shadow: 0 35px 55px #0000;
+    padding: 10px;
 }
-.container .left_side
-{
-    position: relative;
-    background: #003147;
-    padding: 40px;
+.principal{
+    background: #0cb1bf;
+    padding: 10px;
 }
-
-.text_perfil
-{
-    position: relative;
+.header{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgba(255, 255,255, 0.2);
-   
-}
 
-.text_perfil .img_box
-{
-    position: relative;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
 }
-
-.text_perfil .img_box img
-{
-    position: absolute;
-    top: 0;
-    left: 0;
+.nombre{
+    margin-left : 40px;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
-.text_perfil h2
-{
-    color: #fff;
-    font-size: 1.5em;
-    margin-top: 20px;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 100;
-    line-height: 1.4em;
 }
-
-.text_perfil h2 span
-{
-    font-size: 0.6em;
-    font-weight: 300;
-}
-
-.infoContact
-{
-    padding-top: 40px;
-}
-.title
-{
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 100;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-}
-
-.infoContact ul
-{
-    position: relative;
+.titulo{
+    border: 1px solid #0cb1bf;
+    color: #0cb1bf;
     
-}
-
-.infoContact ul li
-{
-    position: relative;
-    list-style: none;
-    margin: 10px 0;
-    cursor: pointer;
-}
-
-.infoContact ul li .icon
-{
-    display: inline-block;
-    width: 30px;
-    font-size: 18px;
-    color: #03a9f4;
-}
-.infoContact ul li span
-{
-    color: #fff;
-    font-weight: 100;
-
-}
-
-.infoContactEducation li
-{
-    margin-bottom: 20px;
-    list-style: none;
-}
-
-.infoContactEducation h5
-{
-    color: #03a9f4;
-    font-weight: 100;
-}
-
-.infoContactEducation h4:nth-child(2)
-{
-    color: #fff;
-    font-weight: 800;
-}
-
-.infoContactEducation h4
-{
-    color: #fff;
-    font-weight: 100;
-}
-
-.infoContactLanguage
-{
-    color: #fff;
-}
-.infoContactLanguage .percent
-{
-    position: relative;
-    width: 100%;
-    height: 6px;
-    background: #081921;
-    display: block;
-    margin-top: 5px;
-}
-
-.infoContactLanguage .percent div
-{
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background: #03a9f4;
-}
-
-
-.container .right_side
-{
-    position: relative;
-    background: #ffff;
-    padding: 40px;
-}
-
-.Acerca
-{
-    margin-bottom: 50px;
-}
-
-.Acerca:last-child
-{
-    margin-bottom: 0;
-}
-
-.title2
-{
-    color: #003147;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-}
-
-p
-{
-    color: #333;
-}
-
-.Acerca .box
-{
-    display: flex;
-    flex-direction: row;
-    margin: 20px 0;
-}
-
-.Acerca .box .yearCompany
-{   
-    min-width: 150px;
-}
-
-.Acerca .box .yearCompany h5
-{
-    text-transform: uppercase;
-    color: #848c90;
-    font-weight: 800;
-}
-
-.Acerca .box .text h4
-{
-    text-transform: uppercase;
-    color: #2a7da2;
-    font-size: 15px;
-}
-
-.habilidades .box
-{
-    position: relative;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    align-items: center;
-}
-
-.habilidades .box h4
-{
-    text-transform: uppercase;
-    color: #848c99;
-    font-weight: 800;
-}
-
-.habilidades .box .percent
-{
-    position: relative;
-    width: 100%;
-    height: 10px;
-    background: #f0f0f0;
-}
-
-.habilidades .box  .percent div
-{
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background: #03a9f4;
-}
-
-.pasatiempos ul
-{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-}
-.pasatiempos ul li
-{
-    list-style: none;
-    color: #333;
-    font-weight: 500;
-    margin: 30px 0;
-}
-
-.pasatiempos ul li .fa
-{
-    color: #03a9f4;
-    font-size: 18px;
-    width: 20px;
 }
