@@ -1,0 +1,17 @@
+.container {
+    margin-top: 150px;
+    background-color: #9C9C9C;
+    max-width: 960px;
+    border-radius: 20px;
+    padding: 30px;
+}
+.crud_prev {
+background-color: #9C9C9C  !important; 
+    border: none;
+}
+input {
+    margin: 10px;
+}
+label {
+    margin: 10px;
+}

@@ -1,12 +1,12 @@
 <?php
 error_reporting(0);
 session_start();
-$actualsesion = $_SESSION['correo'];
 
-if($actualsesion == null || $actualsesion == ''){
+
+if( !$_SESSION['user'] && !$_SESSION['statusAccount']){
 header('location: includes/_sesion/login.php');
 }
 else{
-   header('location: views/usuarios/index.php');
+   header('location: includes/_accounts.php');
 }
 ?>
