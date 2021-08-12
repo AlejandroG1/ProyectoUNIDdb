@@ -8,9 +8,6 @@ if($statusSesion !== '3'){
         echo 'No puedes estar en esta pagina inicia sesion para rederigirte a correctamente';
         die();
     }
-    else {
-        header('Location: ../includes/_accounts.php');
-    }
 }
 ?>
 <!DOCTYPE html>

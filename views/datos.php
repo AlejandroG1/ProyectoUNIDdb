@@ -95,7 +95,7 @@ if($statusSesion !== '2'){
         </div>
         <div class="col-md-3">
         <div class="form-group">
-            <label for="estatura">Estatura</label>
+            <label for="estatura">Estatura:</label>
             <input type="number" name="estatura" id="estatura" class="form-control" required>
         </div>
 </div>
@@ -156,8 +156,21 @@ if($statusSesion !== '2'){
         </div>
 <div class="col-md-6">
             <div class="form-group">
-                <label for="salud">Estado de salud:</label>
-                <input type="text" name="salud" id="salud" class="form-control" required>
+            <p>Estado de salud:</p>
+            <div class="row">
+                        <div class="col-sm-4">
+                         <label for="Mala">MALA</label>
+                        <input type="radio" id="Mala" name="salud" value="Mala">
+                        </div>
+                        <div class="col-sm-4">
+                        <label for="Regular">REGULAR</label>
+                        <input type="radio" id="Regular" name="salud" value="Regular">
+                        </div>
+                        <div class="col-sm-4">
+                        <label for="Buena">BUENA</label>
+                        <input type="radio" id="Buena" name="salud" value="Buena">
+                        </div>
+                    </div>
             </div>
         </div>
 </div>
