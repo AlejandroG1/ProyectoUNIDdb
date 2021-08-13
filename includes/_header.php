@@ -1,20 +1,8 @@
-<?php
-
-session_start();
-$actualsesion = $_SESSION['correo'];
-
-if($actualsesion == null || $actualsesion == ''){
-
-    echo 'acceso denegado';
-    die();
-    
-}
-?>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Base de datos</title>
+    <title>Modulo</title>
 
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
@@ -33,7 +21,7 @@ if($actualsesion == null || $actualsesion == ''){
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
     <div class="sidebar-brand-icon rotate-n-15">
     </div>
-    <div class="sidebar-brand-text mx-3">ADMIN</div>
+    <div class="sidebar-brand-text mx-3">Modulos</div>
 </a>
 <hr class="sidebar-divider my-0">
 <li class="nav-item active">
@@ -43,38 +31,22 @@ if($actualsesion == null || $actualsesion == ''){
 </li>
 <hr class="sidebar-divider">
 <div class="sidebar-heading">
-    ADMINISTRADOR
+    INFORMACION
 </div>
 
 <li class="nav-item">
-    <a class="nav-link collapsed" href="index.php">
-    <span class="material-icons">pattern</span>
-        <span>Productos</span>
-    </a>
-</li>
-<li class="nav-item">
-    <a class="nav-link collapsed" href="indexcopy.php">
-    <span class="material-icons">pattern</span>
-        <span>Stock por acabarse</span>
-    </a>
-</li>
-<li class="nav-item">
-    <a class="nav-link collapsed" href="categorias.php">
-        <span class="material-icons">category</span>
-        <span>  Categorias</span>
-    </a>
-</li>
-<hr class="sidebar-divider">
-<div class="sidebar-heading">
-    PERFIL
-</div>
- 
- <li class="nav-item">
      <a class="nav-link collapsed" href="usuariosindex.php">
          <span class="material-icons">people</span>
-         <span>Información usuarios</span>
+         <span>Usuario</span>
      </a>
  </li>
+
+<hr class="sidebar-divider">
+<div class="sidebar-heading">
+    OPCIONES
+</div>
+ 
+
 <li class="nav-item">
     <a class="nav-link" href="../../includes/_sesion/cerrarSesion.php">
     <span class="material-icons">logout</span>
@@ -116,9 +88,10 @@ if($actualsesion == null || $actualsesion == ''){
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo $actualsesion?> </span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"> </span>
                                 <span class="material-icons">account_circle</span>
                             </a>
                         </li>
                     </ul>
                 </nav>
+                <?php require '../../includes/_footer.php' ?>
