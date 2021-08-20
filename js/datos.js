@@ -16,9 +16,7 @@ $(document).ready(function() {
             alert("faltan campos por llenar");
             return false;
         }
-        var salud = $('input[name="salud"]:checked').val();
         let formulario = new FormData(document.forms.namedItem("datos"))
-        formulario.append('salud', salud)
         formulario.append('accion', 'datosUsuario')
 
         fetch('../includes/_functions.php', {

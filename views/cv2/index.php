@@ -13,27 +13,20 @@
             <div class="foto col-2">
                 <p>aqui va tu foto</p>
             </div>
-            <div class="col-5 name">
-                <h3>Nombre_1 Nombre_2</h3>
-                <h3>Apellido_P Apellido_M</h3>
-                <p>Especialidad</p>
+            <div class="col-5 name" id="name">
             </div>
             <div class="col-4 contact">
                 <h3 class="contacto" >CONTACTO</h3>
-                <p>correo:</p>
-                <p>Telefono:</p>
-                <p>Direccion:</p>   
-                <p></p>
+                <div id="contact">
+
+                </div>
             </div>
     </header>
-    <div class="acerca_de">
+    <div class="acerca_de" id="acerca">
         <br>
         <h3>ACERCA DE MI</h3> 
         <br>
         <p class="texto-user">
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia vo
-
-
         </p>
     </div>
     <div class="experiencia">
@@ -45,17 +38,9 @@
             <p class="col-4">Descripcion de labores:</p>
             <p class="col-4">Tiempo trabajado:</p>
           </div>
-          <div class="row">
-              <p class="col-4 texto-user">experiencia 1</p>
-              <p class="col-4 texto-user" >experiencia 1</p>
-              <p class="col-4 texto-user">experiencia 1</p>
+          <div id="exp">
           </div>
-         
-          <div class="row">
-              <p class="col-4 texto-user">experiencia 2</p>
-              <p class="col-4 texto-user" >experiencia 2</p>
-              <p class="col-4 texto-user">experiencia 2</p>
-          </div>
+        
     </div>
     <div class="academica">
         <br>
@@ -66,36 +51,21 @@
             <p class="col-4">Descripcion de estudios:</p>
             <p class="col-4">Tiempo de cursamiento:</p>
         </div>
-        <div class="row">
-              <p class="col-4 texto-user">estudios 1</p>
-              <p class="col-4 texto-user" >estudios 1</p>
-              <p class="col-4 texto-user">estudios 1</p>
-          </div>
-          <div class="row">
-              <p class="col-4 texto-user">estudios 2</p>
-              <p class="col-4 texto-user" >estudios 2</p>
-              <p class="col-4 texto-user">estudios 2</p>
+        <div id="edu">
           </div>
     </div>
     <div class="habilidades">
         <br>
         <h3>HABILIDADES TECNICAS</h3>
         <br>
+
         <div class="row">
             <p class="col-4">Habilidad:</p>
             <p class="col-4">Nivel de dominio considerado:</p>
             <p class="col-4">Descripcion de habilidad:</p>
         </div>
-        <div class="row">
-              <p class="col-4 texto-user">Habilidad 1</p>
-              <p class="col-4 texto-user">Habilidad 1</p>
-              <p class="col-4 texto-user">Habilidad 1</p>
-          </div>
-          <div class="row">
-              <p class="col-4 texto-user">Habilidad 2</p>
-              <p class="col-4 texto-user">Habilidad 2</p>
-              <p class="col-4 texto-user">Habilidad 2</p>
-          </div>
+        <div id="skill">
+        </div>
     </div>
     <div class="idiomas">
         <h3>IDIOMAS</h3>
@@ -104,38 +74,20 @@
             <p class="col-4">Porcentaje considerado:</p>
             <p class="col-4">Link de mi certificado:</p>
         </div>
-        <div class="row">
-              <p class="col-4 texto-user">idioma 1</p>
-              <p class="col-4 texto-user">idioma 1</p>
-              <p class="col-4 texto-user">idioma 1</p>
+        <div id="idi">
           </div>
-          <div class="row">
-              <p class="col-4 texto-user">idioma 2</p>
-              <p class="col-4 texto-user">idioma 2</p>
-              <p class="col-4 texto-user">idioma 2</p>
-          </div>
+
     </div>
     <div class="row extras">
-        <div class="col-6 pasatiempos">
+        <div class="col-12 pasatiempos">
             <br>
-            <h3>COMPETENCIAS</h3>
+            <h3>PASATIEMPO</h3>
             <br>
-                <p>pasatiempo 1</p>
-                <p>pasatiempo 2</p>
-                <p>pasatiempo 3</p>
-                <p>pasatiempo 4</p>
+<div id="pasatiempo">   
+</div>
         </div>
-        <div class="col-6 competencias">
-            <br>
-            <h3>COMPETENCIAS</h3>
-            <br>
-            <p>competencia 1</p>
-            <p>competencia 2</p>
-            <p>competencia 3</p>
-            <p>competencia 4</p>
-
-        </div>
-
     </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="../../js/dataFill2.js"></script>
 </html>

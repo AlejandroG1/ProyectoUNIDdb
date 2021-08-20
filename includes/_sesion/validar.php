@@ -1,8 +1,5 @@
  <?php
 require_once ("../_db.php");
-/**
- * Validacion de datos para poder iniciar sesion
- */
 if(isset ($_POST['login'])){
 
 $user=$_POST['user'];
@@ -16,22 +13,22 @@ if($filas){
     $row = mysqli_fetch_assoc($resultado);
        $userData = [
             "user" => $row['user'],
-            "status" => $row['status']
+            "status" => $row['status'],
+            "curriculum" => $row['tipo_curriculum']
         ];
-        
     session_start();
     $_SESSION['user']=$userData["user"];
     $_SESSION['statusAccount']= $userData["status"];
+    $_SESSION['curriculum'] = $userData["curriculum"];
 
     if( $_SESSION['statusAccount'] &&  $_SESSION['user']){
         header('location: ../../includes/_accounts.php');
     }
 else{
     echo "no";
-    echo $_SESSION['statusAccount'];
+    echo $_SESSION['curriculum'];
     session_destroy();
 }   
-echo "hola";
 }
 else {
     echo "fallo";

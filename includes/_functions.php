@@ -20,6 +20,9 @@ session_start();
             case 'accountState':
             accountState();
             break;  
+            case 'fillData':
+                fillData();
+            break;
         }
 
     }
@@ -59,7 +62,22 @@ function accountState() {
     }
    
 }
-//insertar idiomas
+function currState() {
+    global $conexion;
+    $sesion = $_SESSION['curriculum'];
+    if ($sesion !== null || $sesion !== ''){
+        $_SESSION['statusAccount'] += 1;
+        $curriculum = $_SESSION['statusAccount'];
+
+        $sqlUpdateUser = "UPDATE acceso_usuarios SET tipo_curriculum='$curriculum' WHERE user = '$sesion';";
+            if(!mysqli_query($conexion, $sqlUpdateUser)){
+                echo json_encode("error");
+            }
+            else{
+               echo json_encode("completado");
+            }
+    }
+}
 function agregar_btn() {
     global $conexion;
     extract($_POST);
@@ -91,7 +109,7 @@ function agregar_btn() {
                                 
         
         }
-    $respuesta = ['type' => 'success',
+     $respuesta = ['type' => 'success',
                'tittle' => 'operacion finalizada',
                'text' => 'correctamente insertado',
                'table' => $_POST['addType']];
@@ -102,9 +120,9 @@ function agregar_btn() {
                 'text' => mysqli_error($conexion)];
                 
 
-    }
-    echo json_encode($respuesta);
-}
+        }
+        echo json_encode($respuesta);
+        }
 }
 function select_Data(){
     global $conexion;
@@ -142,5 +160,45 @@ function select_Data(){
         echo json_encode('error');
      }
     }
+}
+function fillData(){
+    global $conexion;
+    extract($_POST);
+    $sesion = $_SESSION['user'];
+        if(isset($_POST['fill'])){
+            switch($_POST['fill']){
+                case 'datosBasic':
+                    $sql = "SELECT * FROM datos_usuarios WHERE usuario_acceso ='$sesion' LIMIT 1;";
+                    break;
+                case 'datosSkills':
+                    $sql = "SELECT * FROM habilidades_usuarios WHERE usuario = '$sesion' LIMIT 3;";
+                    break;
+                case 'datosEducacion':
+                    $sql = "SELECT * FROM educacion_usuarios WHERE usuario = '$sesion' LIMIT 3; ";
+                    break;
+                case 'datosIdiomas':
+                    $sql = "SELECT * FROM idiomas_usuarios WHERE usuario = '$sesion' LIMIT 3;";
+                    break;
+                case 'datosExperiencia':
+                    $sql = "SELECT * FROM experiencia_usuarios WHERE usuario = '$sesion' LIMIT 3;";
+                    break;
+                case 'datosParentescos':
+                    $sql = "SELECT * FROM parentescos_usuarios WHERE    usuario_acceso = '$sesion' LIMIT 3;";
+                    break;
+            }
+
+            $Datos = mysqli_query($conexion, $sql);
+            if (mysqli_num_rows($Datos)>0)
+            {    
+                while ($Dato = mysqli_fetch_assoc($Datos) ){
+                 $Print[] = $Dato;
+                }
+                 echo json_encode($Print);
+            }
+            else {
+                  echo json_encode('error');
+             }
+
+        }
 }
 ?>

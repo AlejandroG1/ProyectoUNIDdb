@@ -22,7 +22,7 @@ if($_SESSION['user'] && $_SESSION['statusAccount']){
         header('location: ../views/parentesco.php');
     }
     if($_SESSION['statusAccount'] == "8"){
-        header('location: ../views/success.php');
+        header('location: ../views/pagina_principal.php');
     }
     
 }

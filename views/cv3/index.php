@@ -1,149 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" media="all">
-    <link href="styles.css" rel="stylesheet" type="text/css">
-    <title>Curriculum</title>
-</head>
-<body>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+<body class="w3-light-grey">
 
-    <header class="cabezera row">
-            <div class="perfil">
-            <img src="imges.jpg" alt="Imagen de perfil">
-                
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+        <? echo "working"
+        ?>
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+        <img src="imges.jpg" style= "width:100%" alt="Imagen de perfil">
+          <div class="w3-container w3-text-black">
+            <h2>Emmanuel</h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Designer</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>London, UK</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>ex@mail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>1224435534</p>
+          <hr>
+
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+          <p>Adobe Photoshop</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+          </div>
+          <p>Photography</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
+              <div class="w3-center w3-text-white">80%</div>
             </div>
-            <div class="col-5 name">
-                <h3> Mike</h3>
-                
-                <h3>Wazowski xD </h3>
-                
-            </div>
+          </div>
+          <p>Illustrator</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+          </div>
+          <p>Media</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+          </div>
+          <br>
 
-            </header>
-            
-            
-    <div class="infoP">
-        <br>
-        <h3>Informacion Personal</h3> 
-        <br>
-        
-                <p> <b>Telefono:</b> 9981571220</p>
-                <p><b>Direccion:</b> SM251 M79 L2 E G Av.Heriberto Castillo, Pasos del mar</p>  
-                <p><b>Correo:</b> mugarte5672@gmail.com</p>
-               
-                <center>
-        <p>---DESCRIBE TU OBJETIVO---</p>
-        <br>
-        <p class="texto-user">
-        *****TEXTO*****
-
-        </p>
-    </div>
-    <center>
-    <div class="exP">
-        <br>
-        <h3>Experiencia Profesional</h3>
-        <br>
-          <div class="row">
-            <p class="col-4">***Empresa***:</p>  
-            <p class="col-4">Puesto:</p>
-            <p class="col-4">Tiempo laborando:</p>
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
           </div>
-          <div class="row">
-              <p class="col-4 texto-user">experiencia 1</p>
-              <p class="col-4 texto-user" >experiencia 1</p>
-              <p class="col-4 texto-user">experiencia 1</p>
+          <p>Spanish</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
           </div>
-         
-          <div class="row">
-              <p class="col-4 texto-user">experiencia 2</p>
-              <p class="col-4 texto-user" >experiencia 2</p>
-              <p class="col-4 texto-user">experiencia 2</p>
+          <p>German</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
           </div>
-    </div>
-    <div class="escuela">
-        <br>
-        <h3>Formacion Academica</h3>
-        <br>
-        <div class="row">
-            <p class="col-4">Institucion:</p>
-            <p class="col-4">Certificados:</p>
-            <p class="col-4">Ciclo Escolar:</p>
+          <br>
         </div>
-        <div class="row">
-              <p class="col-4 texto-user">Instituto 1</p>
-              <p class="col-4 texto-user" >Certificado 1</p>
-              <p class="col-4 texto-user">Ciclo 1</p>
-          </div>
-          <div class="row">
-              <p class="col-4 texto-user">Instituto 2</p>
-              <p class="col-4 texto-user" >Certificado 2</p>
-              <p class="col-4 texto-user">Ciclo 2</p>
-          </div>
-    </div>
-    <div class="skills">
-        <br>
-        <h3>Habilidades</h3>
-        <br>
-        <div class="row">
-            <p class="col-4">**Coloca tus habilidades**</p>
+      </div><br>
 
-        </div>
-        <div class="row">
-              <p class="col-4 texto-user">Habilidad 1</p>
-              <p class="col-4 texto-user">Habilidad 3</p>
-              <p class="col-4 texto-user">Habilidad 5</p>
-          </div>
-          <div class="row">
-              <p class="col-4 texto-user">Habilidad 2</p>
-              <p class="col-4 texto-user">Habilidad 4</p>
-              <p class="col-4 texto-user">Habilidad 6</p>
-          </div>
+    <!-- End Left Column -->
     </div>
-    <div class="idiomas">
-        <h3>Dominio de Idiomas</h3>
-        <div class="row">
-            <p class="col-4">Idioma:</p>
-            <p class="col-4">Nivel:</p>
 
-        <div class="row">
-              <p class="col-4 texto-user">Ingles</p>
-              <p class="col-4 texto-user">*** Nivel*** </p>
-             
-          </div>
-          <div class="row">
-              <p class="col-4 texto-user">Frances</p>
-              <p class="col-4 texto-user">*** Nivel***</p>
-           
-          </div>
-    </div>
-    <div class="row otro">
-    <div class="col-6 competencias">
-            <br>
-            <h3>Competencias</h3>
-            <br>
-            <p>competencia 1</p>
-            <p>competencia 2</p>
-            <p>competencia 3</p>
-            
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Front End Developer / w3schools.com</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <hr>
         </div>
-        <div class="col-6 competencias">
-            <br>
-            <br>
-            <br>
-           
-            <br>
-            <p>competencia 4</p>
-            <p>competencia 5</p>
-            <p>competencia 6</p>
-          
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
+          <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+        </div>
+      </div>
 
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
+          <p>Web Development! All I need to know in one place</p>
+          <hr>
         </div>
-        </center>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>London Business School</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
+          <p>Master Degree</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>School of Coding</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
+          <p>Bachelor Degree</p><br>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
     </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
 </body>
 </html>
